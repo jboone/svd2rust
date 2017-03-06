@@ -864,9 +864,7 @@ pub fn gen_register(r: &Register,
                                                  .to_sanitized_pascal_case()))
                     } else {
                         Ident::new(&*format!("{}R",
-                                             evs.name
-                                                 .as_ref()
-                                                 .unwrap_or(&field.name)
+                                             field.name
                                                  .to_sanitized_pascal_case()))
                     };
 
@@ -1054,9 +1052,7 @@ pub fn gen_register(r: &Register,
                                                  .to_sanitized_pascal_case()))
                     } else {
                         Ident::new(&*format!("{}W",
-                                             evs.name
-                                                 .as_ref()
-                                                 .unwrap_or(&field.name)
+                                             field.name
                                                  .to_sanitized_pascal_case()))
                     };
 
